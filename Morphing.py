@@ -247,15 +247,15 @@ class ColorAffine:
             destinationImage[i,j,2] = (interPolateB(srcY, srcX))
 
 if __name__=="__main__":
-    img = imageio.imread('me.jpg')
-    startImage = np.array(img)
-    startPoints = np.loadtxt('me.jpg.txt')
+    #img = imageio.imread('me.jpg')
+    #startImage = np.array(img)
+    #startPoints = np.loadtxt('me.jpg.txt')
     #print(Delaunay(startPoints).simplices[19])
-    img = imageio.imread('jen.jpg')
-    endImage = np.array(img)
-    endPoints = np.loadtxt('jen.jpg.txt')
+    #img = imageio.imread('jen.jpg')
+    #endImage = np.array(img)
+    #endPoints = np.loadtxt('jen.jpg.txt')
     #print(Delaunay(endPoints).simplices[19])
-    tmp = ColorBlender(startImage, startPoints, endImage, endPoints)
+    #tmp = ColorBlender(startImage, startPoints, endImage, endPoints)
 
     #print(tmp.triangles.simplices[0])
     #tmp2 = Image.fromarray(tmp.getBlendedImage(0.5))
@@ -263,7 +263,7 @@ if __name__=="__main__":
 
     #tmp2 = tmp.getBlendedImage(0.5)
     #imageio.imsave('pms.jpg', tmp2)
-    tmp.generateMorphVideo('morphResults', 20)
+    #tmp.generateMorphVideo('morphResults', 20)
 
     #tmp2 = tmp.getBlendedImage(0.1)
     #imageio.imsave('t01.jpg', tmp2)
